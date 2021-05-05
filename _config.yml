@@ -1,0 +1,13 @@
+author: Julien Bordet
+name : Bloc note
+description: Bloc note de Julien Bordet
+url: http://www.bordet.info
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title.html
+
+markdown: kramdown
+
+exclude: ["Rmd", ".DS_Store", "README.md"]
+excerpt_separator: <!--more-->
+gems:
+  - jekyll-sitemap

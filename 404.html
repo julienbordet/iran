@@ -1,0 +1,25 @@
+---
+layout: page
+title: "Error 404"
+---
+
+<h2>404, Ooops!</h2>
+
+Désolé, la page demandée n'existe pas, désolé !
+
+<div id="posts" style="margin-top: 20px;">
+
+    Vous pourriez être intéressé par les publications suivantes ?
+
+    <br />
+
+    {% for post in site.posts offset: 0 limit: 5 %}
+
+        <small>
+            <a href="{{ post.url}}">{{ post.title }}</a>
+        </small>
+        <br />
+
+    {% endfor %}
+
+</div>
